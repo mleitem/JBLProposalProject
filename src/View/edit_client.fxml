@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="469.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EditClientController">
+   <children>
+      <VBox alignment="CENTER" layoutX="174.0" layoutY="22.0" prefHeight="120.0" prefWidth="269.0" spacing="5.0">
+         <children>
+            <TextField fx:id="clientaddressid" alignment="CENTER" text="Client Address" />
+            <TextField fx:id="clientnameid" alignment="CENTER" text="Client Name" />
+            <TextField fx:id="clientemailid" alignment="CENTER" text="Client Email" />
+            <TextField fx:id="clientphoneid" alignment="CENTER" text="Client Phone" />
+            <Button mnemonicParsing="false" onAction="#onActionSave" text="Save" />
+         </children>
+      </VBox>
+      <TableView fx:id="clientproposalstableview" layoutX="54.0" layoutY="178.0" prefHeight="200.0" prefWidth="510.0">
+        <columns>
+            <TableColumn fx:id="datecol" prefWidth="108.0" text="Proposal Date" />
+          <TableColumn fx:id="projecttypecol" prefWidth="125.0" text="Project Type" />
+          <TableColumn fx:id="sizecol" prefWidth="77.0" text="Size" />
+            <TableColumn fx:id="durationcol" prefWidth="94.0" text="Duration" />
+            <TableColumn fx:id="totalcol" prefWidth="105.0" text="Total Cost" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" layoutX="148.0" layoutY="400.0" prefHeight="26.0" prefWidth="321.0" spacing="10.0">
+         <children>
+            <Button fx:id="homebuttonid" mnemonicParsing="false" onAction="#onActionHome" prefHeight="26.0" prefWidth="52.0" text="Home" />
+            <Button fx:id="newbuttonid" mnemonicParsing="false" prefHeight="26.0" prefWidth="50.0" text="New" />
+            <Button fx:id="viewbuttonid" mnemonicParsing="false" prefHeight="26.0" prefWidth="50.0" text="View" />
+            <Button fx:id="summarybuttonid" mnemonicParsing="false" prefHeight="26.0" prefWidth="77.0" text="Summary" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="469.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ViewClientController">
+   <children>
+      <Label fx:id="clientaddressid" alignment="CENTER" layoutX="166.0" layoutY="37.0" prefHeight="23.0" prefWidth="268.0" text="*Client Address*">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" layoutX="212.0" layoutY="60.0" prefHeight="97.0" prefWidth="177.0" spacing="5.0">
+         <children>
+            <Label fx:id="clientnameid" text="*Client Name*" />
+            <Label fx:id="clientemailid" text="*Client Email*" />
+            <Label fx:id="clientphoneid" text="*Client Phone*" />
+            <Button mnemonicParsing="false" onAction="#onActionEdit" prefHeight="20.0" prefWidth="38.0" text="Edit">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <TableView fx:id="clientproposalstableview" layoutX="54.0" layoutY="187.0" prefHeight="200.0" prefWidth="510.0">
+        <columns>
+            <TableColumn fx:id="datecol" prefWidth="108.0" text="Proposal Date" />
+          <TableColumn fx:id="projecttypecol" prefWidth="125.0" text="Project Type" />
+          <TableColumn fx:id="sizecol" prefWidth="77.0" text="Size" />
+            <TableColumn fx:id="durationcol" prefWidth="94.0" text="Duration" />
+            <TableColumn fx:id="totalcol" prefWidth="105.0" text="Total Cost" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" layoutX="149.0" layoutY="411.0" prefHeight="26.0" prefWidth="321.0" spacing="10.0">
+         <children>
+            <Button fx:id="homebuttonid" mnemonicParsing="false" onAction="#onActionHome" prefHeight="26.0" prefWidth="52.0" text="Home" />
+            <Button fx:id="newbuttonid" mnemonicParsing="false" onAction="#onActionNew" prefHeight="26.0" prefWidth="50.0" text="New" />
+            <Button fx:id="viewbuttonid" mnemonicParsing="false" onAction="#onActionView" prefHeight="26.0" prefWidth="50.0" text="View" />
+            <Button fx:id="summarybuttonid" mnemonicParsing="false" prefHeight="26.0" prefWidth="77.0" text="Summary" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

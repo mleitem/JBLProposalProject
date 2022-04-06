@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="614.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="Controller.ViewJBLProposalPage2Controller">
+   <children>
+      <Label fx:id="proposaladdressid" alignment="CENTER" layoutX="253.0" layoutY="40.0" prefHeight="1.0" prefWidth="95.0" text="*Address*">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="233.0" layoutY="59.0" prefHeight="19.0" prefWidth="134.0" text=" Proposal - JBL Copy" />
+      <GridPane alignment="CENTER" layoutX="109.0" layoutY="376.0" prefHeight="141.0" prefWidth="382.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="88.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="67.0" minWidth="4.0" prefWidth="45.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="56.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="128.0" text="Excavator" GridPane.rowIndex="1" />
+            <Label fx:id="excavatorcostid" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="\$$$$" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="days" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label alignment="CENTER" prefHeight="22.0" prefWidth="126.0" text="Bobcat" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="128.0" text="Compactor" GridPane.rowIndex="3" />
+            <Label fx:id="excavatordaysid" alignment="CENTER" prefHeight="17.0" prefWidth="123.0" text="000" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="days" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="70.0" text="days" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="127.0" text="Plate Compactor" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="143.0" text="Fuel" GridPane.rowIndex="6" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="days" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="bobcatdaysid" alignment="CENTER" prefHeight="17.0" prefWidth="126.0" text="000" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="compactordaysid" alignment="CENTER" prefHeight="17.0" prefWidth="126.0" text="000" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="bobcatcostid" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="\$$$$" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label fx:id="compactorcostid" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="\$$$$" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label fx:id="platecompactorcostid" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="\$$$$" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label fx:id="fuelcostid" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="\$$$$" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="141.0" text="Saw &amp; Vac System" GridPane.rowIndex="5" />
+            <Label fx:id="sawdaysid" alignment="CENTER" prefHeight="17.0" prefWidth="126.0" text="000" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="sawcostid" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="\$$$$" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="143.0" text="Loader" />
+            <Label fx:id="loadercostid" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="\$$$$" GridPane.columnIndex="3" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="days" GridPane.columnIndex="2" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="days" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="days" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label fx:id="loaderdaysid" alignment="CENTER" prefHeight="17.0" prefWidth="123.0" text="000" GridPane.columnIndex="1" />
+            <Label fx:id="platecompactordaysid" alignment="CENTER" prefHeight="17.0" prefWidth="123.0" text="000" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="fueldaysid" alignment="CENTER" prefHeight="17.0" prefWidth="123.0" text="000" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+      <HBox alignment="CENTER" layoutX="151.0" layoutY="326.0" prefHeight="22.0" prefWidth="299.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="167.0" text="Total Labor" />
+            <Label fx:id="totallaborid" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="\$$$$$">
+               <HBox.margin>
+                  <Insets left="55.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <GridPane alignment="CENTER" layoutX="116.0" layoutY="113.0" prefHeight="196.0" prefWidth="382.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="88.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="67.0" minWidth="4.0" prefWidth="45.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="10.0" prefWidth="56.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="128.0" text="Move In/Out" />
+            <Label fx:id="movingcostid" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="\$$$$" GridPane.columnIndex="3" />
+            <Label alignment="CENTER" prefHeight="22.0" prefWidth="126.0" text="Excavation" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="128.0" text="Drainage/Concrete" GridPane.rowIndex="3" />
+            <Label fx:id="roadbaseyardsid" alignment="CENTER" prefHeight="17.0" prefWidth="123.0" text="000" GridPane.columnIndex="1" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="days" GridPane.columnIndex="2" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="70.0" text="days" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="127.0" text="Laying Pavers" GridPane.rowIndex="7" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="143.0" text="Wall" GridPane.rowIndex="10" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="days" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="beddingyardsid" alignment="CENTER" prefHeight="17.0" prefWidth="126.0" text="000" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="paverspalletsid" alignment="CENTER" prefHeight="17.0" prefWidth="126.0" text="000" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="excavationcostid" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="\$$$$" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Label fx:id="drainagecostid" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="\$$$$" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label fx:id="layingcostid" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="\$$$$" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Label fx:id="wallcostid" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="\$$$$" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+            <Label fx:id="polysandbagsid" alignment="CENTER" prefHeight="17.0" prefWidth="126.0" text="000" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label fx:id="concretebagsid" alignment="CENTER" prefHeight="17.0" prefWidth="126.0" text="000" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="143.0" text="Sanding" GridPane.rowIndex="9" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="143.0" text="Bedding Sand" GridPane.rowIndex="6" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="143.0" text="Demo" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="143.0" text="Cutting" GridPane.rowIndex="8" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="143.0" text="Base Prep" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="days" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="days" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="days" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="days" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="days" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="days" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="days" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="days" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+            <Label fx:id="democostid" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="\$$$$" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label fx:id="baseprepcostid" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="\$$$$" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Label fx:id="edgingcostid" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="\$$$$" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label fx:id="beddingcostid" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="\$$$$" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Label fx:id="cuttingcostid" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="\$$$$" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <Label fx:id="sandingcostid" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="\$$$$" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+            <Label fx:id="roadbaseyardsid1" alignment="CENTER" prefHeight="17.0" prefWidth="123.0" text="000" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="roadbaseyardsid2" alignment="CENTER" prefHeight="17.0" prefWidth="123.0" text="000" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="roadbaseyardsid3" alignment="CENTER" prefHeight="17.0" prefWidth="123.0" text="000" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="roadbaseyardsid4" alignment="CENTER" prefHeight="17.0" prefWidth="123.0" text="000" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="roadbaseyardsid5" alignment="CENTER" prefHeight="17.0" prefWidth="123.0" text="000" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label fx:id="roadbaseyardsid6" alignment="CENTER" prefHeight="17.0" prefWidth="123.0" text="000" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="143.0" text="Edging" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <HBox alignment="CENTER" layoutX="151.0" layoutY="532.0" prefHeight="22.0" prefWidth="299.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="167.0" text="Total Equipment" />
+            <Label fx:id="totalequipmentid" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="\$$$$$">
+               <HBox.margin>
+                  <Insets left="55.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="212.0" layoutY="78.0" prefHeight="19.0" prefWidth="176.0" text="Page 2 - Labor &amp; Equipment" />
+      <HBox alignment="CENTER" layoutX="151.0" layoutY="568.0" prefHeight="22.0" prefWidth="299.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="167.0" text="Proposal Total" />
+            <Label fx:id="proposaltotalid" alignment="CENTER" prefHeight="17.0" prefWidth="71.0" text="\$$$$$">
+               <HBox.margin>
+                  <Insets left="55.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

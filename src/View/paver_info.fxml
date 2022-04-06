@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="695.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PaverInfoController">
+   <children>
+      <Label layoutX="232.0" layoutY="37.0" text="Time Estimation">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="clientaddressid" layoutX="242.0" layoutY="56.0" text="Client Address" />
+      <VBox layoutX="110.0" layoutY="90.0" prefHeight="495.0" prefWidth="345.0" spacing="10.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="26.0" prefWidth="198.0">
+               <children>
+                  <Label text="Move In/Out:" />
+                  <TextField fx:id="movedaysid" prefHeight="9.0" prefWidth="40.0">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="days">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="26.0" prefWidth="296.0">
+               <children>
+                  <Label text="Demo:" />
+                  <TextField fx:id="demodaysid" prefHeight="9.0" prefWidth="40.0">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="days">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="26.0" prefWidth="276.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="26.0" prefWidth="350.0">
+                     <children>
+                        <Label fx:id="yardsdirtid" text="**insert yards of dirt coming out">
+                           <font>
+                              <Font size="8.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="17.0" prefWidth="70.0" text="Excavation:" />
+                        <TextField fx:id="excdaysid" prefHeight="9.0" prefWidth="40.0">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label prefHeight="17.0" prefWidth="35.0" text="days">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="26.0" prefWidth="105.0">
+                           <children>
+                              <Label />
+                              <TextField fx:id="exctripsid" prefHeight="9.0" prefWidth="40.0">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Label text="trips">
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="26.0" prefWidth="198.0">
+               <children>
+                  <Label text="Drainage/Concrete:" />
+                  <TextField fx:id="drainagedaysid" prefHeight="9.0" prefWidth="40.0">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="days">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="14.0" prefWidth="345.0">
+               <children>
+                  <Label fx:id="roadbaseyardsid" alignment="TOP_LEFT" prefHeight="10.0" prefWidth="55.0" text="**insert road base yrds">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Base Prep:" />
+                  <TextField fx:id="baseprepdaysid" prefHeight="9.0" prefWidth="40.0">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="days">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="26.0" prefWidth="277.0">
+               <children>
+                  <Label fx:id="ulinfeetid" text="**inseart unsecured linear feet">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Edging:" />
+                  <TextField fx:id="edgingdaysid" prefHeight="9.0" prefWidth="40.0">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="days">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="26.0" prefWidth="240.0">
+               <children>
+                  <Label fx:id="chipyardsid" text="**insert chip yards">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Bedding:" />
+                  <TextField fx:id="beddingdaysid" prefHeight="9.0" prefWidth="40.0">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="days">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="26.0" prefWidth="232.0">
+               <children>
+                  <Label fx:id="totalsqftid" text="**insert total sqft">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Laying Pavers" />
+                  <TextField fx:id="layingdaysid" prefHeight="9.0" prefWidth="40.0">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="days">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="26.0" prefWidth="230.0">
+               <children>
+                  <Label fx:id="totallinealfeetid" text="**insert total lineal feet">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Cutting:" />
+                  <TextField fx:id="cuttingdaysid" prefHeight="9.0" prefWidth="40.0">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="days">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="26.0" prefWidth="267.0">
+               <children>
+                  <Label fx:id="polysandbagsid" text="**Insert number of poly sand bags">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Sanding:" />
+                  <TextField fx:id="sandingdaysid" prefHeight="9.0" prefWidth="40.0">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="days">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="138.0" layoutY="632.0" prefHeight="26.0" prefWidth="239.0" spacing="30.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onActionCancel" prefHeight="26.0" prefWidth="60.0" text="Cancel" />
+            <Button mnemonicParsing="false" onAction="#onActionBackPage" prefHeight="26.0" prefWidth="60.0" text="Back" />
+            <Button mnemonicParsing="false" onAction="#onActionNextPage" prefHeight="26.0" prefWidth="60.0" text="Next" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
