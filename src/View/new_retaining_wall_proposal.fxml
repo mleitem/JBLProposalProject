@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="346.0" prefWidth="405.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controller.NewRetainingWallProposalController">
+    <children>
+        <Label alignment="CENTER" layoutX="98.0" layoutY="34.0" prefHeight="27.0" prefWidth="209.0" text="Retaining Wall Proposal" textAlignment="CENTER">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <VBox alignment="TOP_CENTER" layoutX="66.0" layoutY="105.0" prefHeight="120.0" prefWidth="275.0" spacing="10.0">
+            <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="27.0" prefWidth="248.0">
+               <children>
+                  <Label text="Project Type:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="projecttypeid" prefHeight="26.0" prefWidth="145.0">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="27.0" prefWidth="209.0">
+                    <children>
+                        <Label prefHeight="19.0" prefWidth="77.0" text="Linear Feet:">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="linearfeetid" prefHeight="26.0" prefWidth="61.0">
+                            <HBox.margin>
+                                <Insets left="5.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="26.0" prefWidth="221.0">
+                    <children>
+                        <Label prefHeight="19.0" prefWidth="91.0" text="Height (Feet):">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="securedlinearfeetid" prefHeight="26.0" prefWidth="60.0">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" />
+            </padding>
+        </VBox>
+        <HBox layoutX="130.0" layoutY="287.0" prefHeight="27.0" prefWidth="148.0" spacing="30.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#onActionCancel" prefHeight="26.0" prefWidth="60.0" text="Cancel" />
+                <Button mnemonicParsing="false" onAction="#onActionNextPage" prefHeight="26.0" prefWidth="60.0" text="Next" />
+            </children>
+        </HBox>
+      <CheckBox fx:id="easyaccessid" layoutX="157.0" layoutY="231.0" mnemonicParsing="false" text="Easy Access" />
+      <Label fx:id="clientaddressid" layoutX="163.0" layoutY="64.0" text="Client Address" />
+    </children>
+</AnchorPane>

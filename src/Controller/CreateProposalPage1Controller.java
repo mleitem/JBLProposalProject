@@ -97,6 +97,15 @@ public class CreateProposalPage1Controller implements Initializable {
 
         if (checkretaingingwallid.isSelected()) {
             System.out.println("Retaining Wall!");
+            stage = (Stage) ((Button)event.getSource()).getScene().getWindow();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/new_retaining_wall_proposal.fxml"));
+            scene = loader.load();
+            Scene root = new Scene(scene);
+            stage.setScene(root);
+            stage.show();
+
+            NewRetainingWallProposalController controller = loader.getController();
+            controller.setAddress(address);
         }
 
         /**

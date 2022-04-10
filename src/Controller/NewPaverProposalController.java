@@ -52,6 +52,7 @@ public class NewPaverProposalController implements Initializable {
     Proposal proposal;
 
     public void setAddress(String address) {
+
         clientaddressid.setText(address);
     }
 
